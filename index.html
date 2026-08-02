@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Semester Examination Dashboard - View your semester-wise exam cards and actions.">
+  <title>Semester Examination Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <button class="hamburger" title="Menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="index.html" class="home-btn">
+        <span class="material-symbols-outlined">home</span>
+        Home
+      </a>
+    </div>
+    <div class="navbar-center">
+      <button class="grid-icon" title="Apps">
+        <span class="material-symbols-outlined">apps</span>
+      </button>
+    </div>
+    <div class="navbar-right">
+      <div class="search-box">
+        <span class="material-symbols-outlined">search</span>
+        <input type="text" placeholder="Search Module">
+      </div>
+      <button class="nav-icon-btn" title="Settings">
+        <span class="material-symbols-outlined">tune</span>
+      </button>
+      <button class="nav-icon-btn" title="Notifications">
+        <span class="material-symbols-outlined">filter_list</span>
+      </button>
+      <div class="avatar" title="Profile">PT</div>
+    </div>
+  </nav>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb">
+      <span class="material-symbols-outlined">home</span>
+      <span class="sep">›</span>
+      <a href="#">Exam</a>
+      <span class="sep">›</span>
+      <a href="#">Exam Dashboard</a>
+    </div>
+    <div class="breadcrumb-actions">
+      <button class="info-btn">
+        Info
+        <span class="material-symbols-outlined">info</span>
+      </button>
+      <button class="tutorial-btn">
+        Tutorial
+        <span class="material-symbols-outlined">favorite</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div class="page-header">
+    <div class="page-header-row">
+      <div id="pageTitle">
+        <h1>Semester Examination Dashboard</h1>
+        <p>Semester-wise exam cards and actions.</p>
+      </div>
+      <div class="tab-toggle">
+        <button class="active" id="tabSemester">Semester</button>
+        <button id="tabAnnual">Annual</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SEMESTER CARDS ===== -->
+  <div class="cards-container" id="cardsContainer">
+
+    <!-- Semester II Card -->
+    <div class="semester-card" id="card-sem2">
+      <div class="card-header">
+        <div>
+          <h3>Semester II</h3>
+          <span class="subtitle">FY-B.Tech Computer Science Engineering (23)</span>
+        </div>
+        <button class="three-dot-btn" onclick="toggleMenu('menu-sem2', event)">
+          <span class="material-symbols-outlined">more_vert</span>
+        </button>
+      </div>
+      <div class="tags-row">
+        <span class="tag-label">Status:</span>
+        <span class="tag tag-completed">Completed</span>
+        <span class="tag-label">Term:</span>
+        <span class="tag tag-term">Term 2</span>
+        <span class="tag-date">Result Date: 22/07/2026</span>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <span class="label">Seat Number</span>
+          <span class="value">2503201000837</span>
+        </div>
+        <div class="info-item">
+          <span class="label">No. Of Attempts</span>
+          <span class="value">1</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Subjects (Pass/Total)</span>
+          <span class="value primary">12 / 12</span>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <span class="label">Credits (Earned/Total)</span>
+          <span class="value">23 / 23</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Marks</span>
+          <span class="value">881 / 1200</span>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <span class="label">Marksheet Publish Date</span>
+          <span class="value primary">22/07/2026</span>
+        </div>
+        <div class="info-item">
+          <span class="label">SGPA</span>
+          <span class="value">8.10</span>
+        </div>
+      </div>
+      <div class="success-banner">
+        <span class="material-symbols-outlined">check_circle</span>
+        Successfully completed • All subjects passed
+      </div>
+
+      <!-- Dropdown menu -->
+      <div class="dropdown-menu" id="menu-sem2">
+        <!-- Main menu items -->
+        <div class="menu-main" id="main-sem2">
+          <button class="dropdown-item" onclick="showSubMenu('sem2', event)">
+            <span class="material-symbols-outlined">description</span>
+            Show Exam Result
+          </button>
+          <button class="dropdown-item">
+            <span class="material-symbols-outlined">confirmation_number</span>
+            Exam Hall Ticket
+          </button>
+        </div>
+        <!-- Sub-menu (replaces main) -->
+        <div class="sub-dropdown" id="sub-sem2">
+          <div class="sub-dropdown-header" onclick="hideSubMenu('sem2', event)">
+            <span class="material-symbols-outlined">description</span>
+            Show Exam Result
+          </div>
+          <button class="sub-item" onclick="goToResult('sem2', 'term2')">
+            <div class="sub-title">2025 | Term 2 | Regular</div>
+            <div class="sub-meta">12 Subjects | 22/07/2026</div>
+          </button>
+          <button class="sub-item" onclick="goToResult('sem2', 'mid1')">
+            <div class="sub-title">2025 | Mid Term 1 (4) | Regular (1)</div>
+            <div class="sub-meta">30/06/2026</div>
+          </button>
+          <button class="sub-item" onclick="goToResult('sem2', 'mid2')">
+            <div class="sub-title">2025 | Mid Term 2 (5) | Regular (1)</div>
+            <div class="sub-meta">30/06/2026</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Semester I Card -->
+    <div class="semester-card" id="card-sem1">
+      <div class="card-header">
+        <div>
+          <h3>Semester I</h3>
+          <span class="subtitle">FY-B.Tech Computer Science Engineering (23)</span>
+        </div>
+        <button class="three-dot-btn" onclick="toggleMenu('menu-sem1', event)">
+          <span class="material-symbols-outlined">more_vert</span>
+        </button>
+      </div>
+      <div class="tags-row">
+        <span class="tag-label">Status:</span>
+        <span class="tag tag-completed">Completed</span>
+        <span class="tag-label">Term:</span>
+        <span class="tag tag-term">Term 1</span>
+        <span class="tag-date">Result Date: 09/04/2026</span>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <span class="label">Seat Number</span>
+          <span class="value">2503201000837</span>
+        </div>
+        <div class="info-item">
+          <span class="label">No. Of Attempts</span>
+          <span class="value">1</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Subjects (Pass/Total)</span>
+          <span class="value primary">12 / 12</span>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <span class="label">Credits (Earned/Total)</span>
+          <span class="value">23 / 23</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Marks</span>
+          <span class="value">942 / 1200</span>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <span class="label">Marksheet Publish Date</span>
+          <span class="value primary">09/04/2026</span>
+        </div>
+        <div class="info-item">
+          <span class="label">SGPA</span>
+          <span class="value">7.70</span>
+        </div>
+      </div>
+      <div class="success-banner">
+        <span class="material-symbols-outlined">check_circle</span>
+        Successfully completed • All subjects passed
+      </div>
+
+      <!-- Dropdown menu -->
+      <div class="dropdown-menu" id="menu-sem1">
+        <!-- Main menu items -->
+        <div class="menu-main" id="main-sem1">
+          <button class="dropdown-item" onclick="showSubMenu('sem1', event)">
+            <span class="material-symbols-outlined">description</span>
+            Show Exam Result
+          </button>
+          <button class="dropdown-item">
+            <span class="material-symbols-outlined">confirmation_number</span>
+            Exam Hall Ticket
+          </button>
+        </div>
+        <!-- Sub-menu (replaces main) -->
+        <div class="sub-dropdown" id="sub-sem1">
+          <div class="sub-dropdown-header" onclick="hideSubMenu('sem1', event)">
+            <span class="material-symbols-outlined">description</span>
+            Show Exam Result
+          </div>
+          <button class="sub-item" onclick="goToResult('sem1', 'term1')">
+            <div class="sub-title">2025 | Term 1 | Regular</div>
+            <div class="sub-meta">12 Subjects | 09/04/2026</div>
+          </button>
+          <button class="sub-item" onclick="goToResult('sem1', 'mid1')">
+            <div class="sub-title">2025 | Mid Term 1 (4) | Regular (1)</div>
+            <div class="sub-meta">15/02/2026</div>
+          </button>
+          <button class="sub-item" onclick="goToResult('sem1', 'mid2')">
+            <div class="sub-title">2025 | Mid Term 2 (5) | Regular (1)</div>
+            <div class="sub-meta">28/02/2026</div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ANNUAL VIEW (hidden by default) ===== -->
+  <div class="annual-container" id="annualContainer" style="display:none;">
+    <!-- Year Header -->
+    <div class="year-header">
+      <div>
+        <h2 class="year-title">Year 1 · 2025</h2>
+        <span class="year-subtitle">FY B.Tech Computer Science Engineering (23)</span>
+      </div>
+      <div class="year-seat">
+        <span>Seat No. 2503201000837</span>
+        <button class="three-dot-btn"><span class="material-symbols-outlined">more_vert</span></button>
+      </div>
+    </div>
+
+    <!-- Annual Summary Bar -->
+    <div class="annual-summary-bar">
+      <div class="annual-summary-item">
+        <div class="label">YGPA</div>
+        <div class="value">7.90</div>
+      </div>
+      <div class="annual-summary-item">
+        <div class="label">Yearly Remark</div>
+        <div class="value">PWG</div>
+      </div>
+      <div class="annual-summary-item">
+        <div class="label">Seat No.</div>
+        <div class="value">2503201000837</div>
+      </div>
+      <div class="annual-summary-item">
+        <div class="label">Class</div>
+        <div class="value">FY-B.Tech Computer Science Engineering (23)</div>
+      </div>
+      <div class="annual-summary-item">
+        <div class="label">Subjects Scheduled</div>
+        <div class="value">24</div>
+      </div>
+      <div class="annual-summary-item">
+        <div class="label">Subjects Passed</div>
+        <div class="value">24</div>
+      </div>
+      <div class="annual-summary-item">
+        <div class="label">Subjects Failed</div>
+        <div class="value">0</div>
+      </div>
+      <div class="annual-summary-item">
+        <div class="label">Credits (Earned/Total)</div>
+        <div class="value">46 / 46</div>
+      </div>
+    </div>
+
+    <!-- Annual Semester Cards -->
+    <div class="annual-cards">
+      <!-- Semester I -->
+      <div class="annual-sem-card">
+        <div class="card-header">
+          <div>
+            <h3>Semester I</h3>
+            <span class="subtitle">FY-B.Tech Computer Science Engineering (23)</span>
+          </div>
+        </div>
+        <div class="tags-row">
+          <span class="tag-label">Status:</span>
+          <span class="tag tag-completed">Completed</span>
+          <span class="tag-label">Term:</span>
+          <span class="tag tag-term">Term 1</span>
+          <span class="tag-date">Result Date: 09/04/2026</span>
+        </div>
+        <div class="info-row">
+          <div class="info-item"><span class="label">Seat Number</span><span class="value">2503201000837</span></div>
+          <div class="info-item"><span class="label">No. Of Attempts</span><span class="value">1</span></div>
+          <div class="info-item"><span class="label">Subjects (Pass/Total)</span><span class="value primary">12 / 12</span></div>
+          <div class="info-item"><span class="label">Credits (Earned/Total)</span><span class="value">23 / 23</span></div>
+        </div>
+        <div class="info-row">
+          <div class="info-item"><span class="label">Marks</span><span class="value">942 / 1200</span></div>
+          <div class="info-item"><span class="label">Marksheet Publish Date</span><span class="value primary">09/04/2026</span></div>
+          <div class="info-item"><span class="label">SGPA</span><span class="value">7.70</span></div>
+        </div>
+        <div class="success-banner">
+          <span class="material-symbols-outlined">check_circle</span>
+          PASS • All subjects passed
+        </div>
+      </div>
+
+      <!-- Semester II -->
+      <div class="annual-sem-card">
+        <div class="card-header">
+          <div>
+            <h3>Semester II</h3>
+            <span class="subtitle">FY-B.Tech Computer Science Engineering (23)</span>
+          </div>
+        </div>
+        <div class="tags-row">
+          <span class="tag-label">Status:</span>
+          <span class="tag tag-completed">Completed</span>
+          <span class="tag-label">Term:</span>
+          <span class="tag tag-term">Term 2</span>
+          <span class="tag-date">Result Date: 22/07/2026</span>
+        </div>
+        <div class="info-row">
+          <div class="info-item"><span class="label">Seat Number</span><span class="value">2503201000837</span></div>
+          <div class="info-item"><span class="label">No. Of Attempts</span><span class="value">1</span></div>
+          <div class="info-item"><span class="label">Subjects (Pass/Total)</span><span class="value primary">12 / 12</span></div>
+          <div class="info-item"><span class="label">Credits (Earned/Total)</span><span class="value">23 / 23</span></div>
+        </div>
+        <div class="info-row">
+          <div class="info-item"><span class="label">Marks</span><span class="value">881 / 1200</span></div>
+          <div class="info-item"><span class="label">Marksheet Publish Date</span><span class="value primary">22/07/2026</span></div>
+          <div class="info-item"><span class="label">SGPA</span><span class="value">8.10</span></div>
+        </div>
+        <div class="success-banner">
+          <span class="material-symbols-outlined">check_circle</span>
+          PWG • All subjects passed
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay to close menus -->
+  <div class="overlay" id="overlay" onclick="closeAllMenus()"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

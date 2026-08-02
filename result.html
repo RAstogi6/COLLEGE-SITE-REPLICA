@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Semester Examination Result - Detailed subject-wise marks, grades, and SGPA."
+    />
+    <title>Semester Examination Result</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="navbar-left">
+        <button class="hamburger" title="Menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <a href="index.html" class="home-btn">
+          <span class="material-symbols-outlined">home</span>
+          Home
+        </a>
+      </div>
+      <div class="navbar-center">
+        <button class="grid-icon" title="Apps">
+          <span class="material-symbols-outlined">apps</span>
+        </button>
+      </div>
+      <div class="navbar-right">
+        <div class="search-box">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" placeholder="Search Module" />
+        </div>
+        <button class="nav-icon-btn" title="Settings">
+          <span class="material-symbols-outlined">tune</span>
+        </button>
+        <button class="nav-icon-btn" title="Notifications">
+          <span class="material-symbols-outlined">filter_list</span>
+        </button>
+        <div class="avatar" title="Profile">PR</div>
+      </div>
+    </nav>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <div class="breadcrumb-bar">
+      <div class="breadcrumb">
+        <span class="material-symbols-outlined">home</span>
+        <span class="sep">›</span>
+        <a href="index.html">Exam</a>
+        <span class="sep">›</span>
+        <a href="#">Examination Result</a>
+      </div>
+      <div class="breadcrumb-actions">
+        <button class="info-btn">
+          Info
+          <span class="material-symbols-outlined">info</span>
+        </button>
+        <button class="tutorial-btn">
+          Tutorial
+          <span class="material-symbols-outlined">favorite</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="result-page-header">
+      <div class="page-header-row">
+        <h1>: Semester Examination Result</h1>
+        <button class="download-btn" onclick="window.print()">
+          <span class="material-symbols-outlined">download</span>
+          Download PDF
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== STUDENT INFO BAR ===== -->
+    <div class="student-info-bar">
+      <div class="student-info-item">
+        <div class="label">Student Name</div>
+        <div class="value">Prakhar Tiwari</div>
+      </div>
+      <div class="student-info-item">
+        <div class="label">Seat No.</div>
+        <div class="value">2503201000837</div>
+      </div>
+      <div class="student-info-item">
+        <div class="label">Class</div>
+        <div class="value">FY-B.Tech Computer Science Engineering (23)</div>
+      </div>
+      <div class="student-info-item">
+        <div class="label">Semester</div>
+        <div class="value" id="resultSemester">Semester II</div>
+      </div>
+      <div class="student-info-item">
+        <div class="label">Academic Year</div>
+        <div class="value">2025</div>
+      </div>
+      <div class="student-info-item">
+        <div class="label">Published On</div>
+        <div class="value" id="resultPublishedOn">2026-07-22</div>
+      </div>
+    </div>
+
+    <!-- ===== SUMMARY CARDS ===== -->
+    <div class="summary-cards">
+      <div class="summary-card">
+        <div class="summary-icon sgpa">
+          <span class="material-symbols-outlined">edit</span>
+        </div>
+        <div class="summary-content">
+          <div class="big-number" id="summSGPA">8.10 <span class="small">SGPA</span></div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon marks">
+          <span class="material-symbols-outlined">bar_chart</span>
+        </div>
+        <div class="summary-content">
+          <div class="big-number">
+            <span style="color: #22c55e" id="summMarks">881</span>
+            <span class="small" id="summMarksTotal">1200</span>
+          </div>
+          <div class="summary-label">Total Marks</div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon credits">
+          <span class="material-symbols-outlined">check_circle</span>
+        </div>
+        <div class="summary-content">
+          <div class="big-number">
+            <span style="color: #22c55e" id="summCredits">23</span>
+            <span class="small" id="summCreditsTotal">/23</span>
+          </div>
+          <div class="summary-label">Credits Earned</div>
+        </div>
+      </div>
+      <div class="summary-card">
+        <div class="summary-icon status">
+          <span class="material-symbols-outlined">check_circle</span>
+        </div>
+        <div class="summary-content">
+          <div class="status-text">~ Result Status</div>
+          <div class="status-sub">All subjects cleared successfully</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== MARKS TABLE ===== -->
+    <div class="marks-table-wrapper">
+      <table class="marks-table" id="marksTable">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Mid Term 1<span class="sub-header">OBT | MIN | MAX</span></th>
+            <th>Mid Term 2<span class="sub-header">OBT | MIN | MAX</span></th>
+            <th>End Term<span class="sub-header">OBT | MIN | MAX</span></th>
+            <th>
+              External (1+2+3) [A]<span class="sub-header"
+                >OBT | MIN | MAX</span
+              >
+            </th>
+            <th>Internal [B]<span class="sub-header">OBT | MIN | MAX</span></th>
+            <th>
+              Subject Total (A+B)<span class="sub-header">OBT | MIN | MAX</span>
+            </th>
+            <th>Credits Earned</th>
+            <th>Grade</th>
+            <th>GP</th>
+            <th>CG</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody id="marksBody">
+          <!-- Rows populated by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="result-footer">
+      <p class="legend">
+        SGPA – Semester Grade Point Average, &nbsp; GP – Grade Points, &nbsp; CG
+        – Credit × Grade Points, &nbsp; PCP – Promoted with Carry Paper(s),
+        &nbsp; Grade Scale printed on ledger.
+      </p>
+      <p class="disclaimer">
+        <strong>Note:</strong> The College shall not be held responsible for any
+        inadvertent errors or omissions in this statement.
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      // Load result data on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        renderResultPage();
+      });
+    </script>
+  </body>
+</html>
