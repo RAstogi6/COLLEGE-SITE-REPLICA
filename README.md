@@ -1,8 +1,8 @@
 # 🎓 College Examination Dashboard Replica
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?logo=github)](https://rastogi6.github.io/COLLEGE-SITE-REPLICA/)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen?logo=github)](https://rastogi6.github.io/ABESresult/)
 
-🔗 **Live Website:** [https://rastogi6.github.io/COLLEGE-SITE-REPLICA/](https://rastogi6.github.io/COLLEGE-SITE-REPLICA/)
+🔗 **Live Website:** [https://rastogi6.github.io/ABESresult/](https://rastogi6.github.io/ABESresult/)
 
 A responsive, pixel-perfect frontend replica of a university/college examination ERP dashboard.
 
@@ -39,11 +39,11 @@ A responsive, pixel-perfect frontend replica of a university/college examination
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/RAstogi6/COLLEGE-SITE-REPLICA.git
+   git clone https://github.com/RAstogi6/ABESresult.git
    ```
 2. **Navigate to the directory:**
    ```bash
-   cd COLLEGE-SITE-REPLICA
+   cd ABESresult
    ```
 3. **Open `index.html`** in any web browser or serve using Live Server.
 
