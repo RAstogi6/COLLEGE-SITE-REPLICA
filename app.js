@@ -2,9 +2,10 @@
 const examData = {
   sem2: {
     semester: 'Semester II',
-    publishedOn: '2026-07-22',
-    sgpa: '8.10',
-    totalMarks: 881,
+    publishedOn: '2026-09-09',
+    sgpa: '6.70',
+    cgpa: '6.90',
+    totalMarks: 839,
     maxMarks: 1200,
     creditsEarned: 23,
     totalCredits: 23,
@@ -14,72 +15,72 @@ const examData = {
         code: '25AS202',
         type: 'THEORY',
         mid1: { obt: 6, min: 0, max: 15 },
-        mid2: { obt: 1, min: 0, max: 15 },
-        end: { obt: 12, min: 12, max: 40 },
-        external: { obt: 19, min: 21, max: 70 },
-        internal: { obt: 24, min: 0, max: 30 },
-        total: { obt: 43, min: 40, max: 100 },
-        credits: 3, grade: 'E#', gp: 0, cg: 0, result: 'PASS'
+        mid2: { obt: 5, min: 0, max: 15 },
+        end: { obt: 13, min: 12, max: 40 },
+        external: { obt: 24, min: 21, max: 70 },
+        internal: { obt: 23, min: 0, max: 30 },
+        total: { obt: 47, min: 40, max: 100 },
+        credits: 3, grade: 'D', gp: 5, cg: 15, result: 'PASS'
       },
       {
         name: 'DATA STRUCTURE USING C++',
         code: '25CS201',
         type: 'THEORY',
-        mid1: { obt: 10, min: 0, max: 15 },
-        mid2: { obt: 1, min: 0, max: 15 },
-        end: { obt: 23, min: 12, max: 40 },
-        external: { obt: 34, min: 21, max: 70 },
-        internal: { obt: 28, min: 0, max: 30 },
-        total: { obt: 62, min: 40, max: 100 },
-        credits: 3, grade: 'B', gp: 7, cg: 21, result: 'PASS'
+        mid1: { obt: 8, min: 0, max: 15 },
+        mid2: { obt: 7, min: 0, max: 15 },
+        end: { obt: 15, min: 12, max: 40 },
+        external: { obt: 30, min: 21, max: 70 },
+        internal: { obt: 26, min: 0, max: 30 },
+        total: { obt: 56, min: 40, max: 100 },
+        credits: 3, grade: 'C', gp: 6, cg: 18, result: 'PASS'
       },
       {
         name: 'APPLIED PHYSICS',
         code: '25AS201',
         type: 'THEORY',
-        mid1: { obt: 10, min: 0, max: 15 },
-        mid2: { obt: 3, min: 0, max: 15 },
-        end: { obt: 17, min: 12, max: 40 },
-        external: { obt: 30, min: 21, max: 70 },
-        internal: { obt: 29, min: 0, max: 30 },
-        total: { obt: 59, min: 40, max: 100 },
-        credits: 3, grade: 'C', gp: 6, cg: 18, result: 'PASS'
+        mid1: { obt: 6, min: 0, max: 15 },
+        mid2: { obt: 6, min: 0, max: 15 },
+        end: { obt: 12, min: 12, max: 40 },
+        external: { obt: 24, min: 21, max: 70 },
+        internal: { obt: 24, min: 0, max: 30 },
+        total: { obt: 48, min: 40, max: 100 },
+        credits: 3, grade: 'D', gp: 5, cg: 15, result: 'PASS'
       },
       {
         name: 'BASICS OF ELECTRICAL ENGINEERING',
         code: '25EL201',
         type: 'THEORY',
-        mid1: { obt: 5, min: 0, max: 15 },
-        mid2: { obt: 6, min: 0, max: 15 },
-        end: { obt: 10, min: 12, max: 40 },
-        external: { obt: 21, min: 21, max: 70 },
-        internal: { obt: 29, min: 0, max: 30 },
-        total: { obt: 50, min: 40, max: 100 },
-        credits: 3, grade: 'E#', gp: 0, cg: 0, result: 'PASS'
+        mid1: { obt: 6, min: 0, max: 15 },
+        mid2: { obt: 5, min: 0, max: 15 },
+        end: { obt: 12, min: 12, max: 40 },
+        external: { obt: 22, min: 21, max: 70 },
+        internal: { obt: 24, min: 0, max: 30 },
+        total: { obt: 46, min: 40, max: 100 },
+        credits: 3, grade: 'D', gp: 5, cg: 15, result: 'PASS'
       },
       {
         name: 'ENVIRONMENT AND SUSTAINABILITY',
         code: '25AS203',
         type: 'THEORY',
-        mid1: { obt: 10, min: 0, max: 15 },
-        mid2: { obt: 9, min: 0, max: 15 },
-        end: { obt: 26, min: 12, max: 40 },
-        external: { obt: 45, min: 21, max: 70 },
-        internal: { obt: 29, min: 0, max: 30 },
-        total: { obt: 74, min: 40, max: 100 },
-        credits: 2, grade: 'B+', gp: 8, cg: 16, result: 'PASS'
+        mid1: { obt: 8, min: 0, max: 15 },
+        mid2: { obt: 8, min: 0, max: 15 },
+        end: { obt: 16, min: 12, max: 40 },
+        external: { obt: 32, min: 21, max: 70 },
+        internal: { obt: 26, min: 0, max: 30 },
+        total: { obt: 58, min: 40, max: 100 },
+        credits: 2, grade: 'C', gp: 6, cg: 12, result: 'PASS'
       },
       {
         name: 'ESSENTIAL OF AI',
         code: '25AI201',
         type: 'THEORY',
-        mid1: { obt: 11, min: 0, max: 15 },
-        mid2: { obt: 10, min: 0, max: 15 },
-        end: { obt: 18, min: 12, max: 40 },
-        external: { obt: 39, min: 21, max: 70 },
-        internal: { obt: 27, min: 0, max: 30 },
-        total: { obt: 66, min: 40, max: 100 },
-        credits: 2, grade: 'B', gp: 7, cg: 14, result: 'PASS'
+        mid1: { obt: 8, min: 0, max: 15 },
+        mid2: { obt: 7, min: 0, max: 15 },
+        end: { obt: 16, min: 12, max: 40 },
+        external: { obt: 31, min: 21, max: 70 },
+        internal: { obt: 26, min: 0, max: 30 },
+        total: { obt: 57, min: 40, max: 100 },
+        credits: 2, grade: 'C', gp: 6, cg: 12, result: 'PASS'
       },
       {
         name: 'WEB DESIGNING WORKSHOP II',
@@ -157,9 +158,9 @@ const examData = {
   },
   sem1: {
     semester: 'Semester I',
-    publishedOn: '2026-04-09',
-    sgpa: '7.70',
-    totalMarks: 942,
+    publishedOn: '2026-09-09',
+    sgpa: '7.10',
+    totalMarks: 859,
     maxMarks: 1200,
     creditsEarned: 23,
     totalCredits: 23,
@@ -168,73 +169,73 @@ const examData = {
         name: 'ENGINEERING MATHEMATICS-I',
         code: '25AS101',
         type: 'THEORY',
-        mid1: { obt: 12, min: 0, max: 15 },
-        mid2: { obt: 8, min: 0, max: 15 },
-        end: { obt: 28, min: 12, max: 40 },
-        external: { obt: 48, min: 21, max: 70 },
-        internal: { obt: 28, min: 0, max: 30 },
-        total: { obt: 76, min: 40, max: 100 },
-        credits: 3, grade: 'B+', gp: 8, cg: 24, result: 'PASS'
+        mid1: { obt: 8, min: 0, max: 15 },
+        mid2: { obt: 7, min: 0, max: 15 },
+        end: { obt: 18, min: 12, max: 40 },
+        external: { obt: 33, min: 21, max: 70 },
+        internal: { obt: 25, min: 0, max: 30 },
+        total: { obt: 58, min: 40, max: 100 },
+        credits: 3, grade: 'C', gp: 6, cg: 18, result: 'PASS'
       },
       {
         name: 'ENGINEERING CHEMISTRY',
         code: '25AS102',
         type: 'THEORY',
-        mid1: { obt: 11, min: 0, max: 15 },
-        mid2: { obt: 10, min: 0, max: 15 },
-        end: { obt: 25, min: 12, max: 40 },
-        external: { obt: 46, min: 21, max: 70 },
-        internal: { obt: 29, min: 0, max: 30 },
-        total: { obt: 75, min: 40, max: 100 },
-        credits: 3, grade: 'B+', gp: 8, cg: 24, result: 'PASS'
+        mid1: { obt: 8, min: 0, max: 15 },
+        mid2: { obt: 7, min: 0, max: 15 },
+        end: { obt: 16, min: 12, max: 40 },
+        external: { obt: 31, min: 21, max: 70 },
+        internal: { obt: 25, min: 0, max: 30 },
+        total: { obt: 56, min: 40, max: 100 },
+        credits: 3, grade: 'C', gp: 6, cg: 18, result: 'PASS'
       },
       {
         name: 'INTRODUCTION TO PROGRAMMING USING C',
         code: '25CS101',
         type: 'THEORY',
-        mid1: { obt: 12, min: 0, max: 15 },
-        mid2: { obt: 11, min: 0, max: 15 },
-        end: { obt: 30, min: 12, max: 40 },
-        external: { obt: 53, min: 21, max: 70 },
-        internal: { obt: 28, min: 0, max: 30 },
-        total: { obt: 81, min: 40, max: 100 },
-        credits: 3, grade: 'A', gp: 9, cg: 27, result: 'PASS'
+        mid1: { obt: 9, min: 0, max: 15 },
+        mid2: { obt: 8, min: 0, max: 15 },
+        end: { obt: 16, min: 12, max: 40 },
+        external: { obt: 33, min: 21, max: 70 },
+        internal: { obt: 26, min: 0, max: 30 },
+        total: { obt: 59, min: 40, max: 100 },
+        credits: 3, grade: 'C', gp: 6, cg: 18, result: 'PASS'
       },
       {
         name: 'BASICS OF MECHANICAL ENGINEERING',
         code: '25ME101',
         type: 'THEORY',
-        mid1: { obt: 9, min: 0, max: 15 },
-        mid2: { obt: 7, min: 0, max: 15 },
-        end: { obt: 20, min: 12, max: 40 },
-        external: { obt: 36, min: 21, max: 70 },
-        internal: { obt: 27, min: 0, max: 30 },
-        total: { obt: 63, min: 40, max: 100 },
-        credits: 3, grade: 'B', gp: 7, cg: 21, result: 'PASS'
+        mid1: { obt: 8, min: 0, max: 15 },
+        mid2: { obt: 8, min: 0, max: 15 },
+        end: { obt: 16, min: 12, max: 40 },
+        external: { obt: 32, min: 21, max: 70 },
+        internal: { obt: 25, min: 0, max: 30 },
+        total: { obt: 57, min: 40, max: 100 },
+        credits: 3, grade: 'C', gp: 6, cg: 18, result: 'PASS'
       },
       {
         name: 'COMMUNICATION SKILLS',
         code: '25AS103',
         type: 'THEORY',
-        mid1: { obt: 10, min: 0, max: 15 },
+        mid1: { obt: 9, min: 0, max: 15 },
         mid2: { obt: 9, min: 0, max: 15 },
-        end: { obt: 24, min: 12, max: 40 },
-        external: { obt: 43, min: 21, max: 70 },
-        internal: { obt: 29, min: 0, max: 30 },
-        total: { obt: 72, min: 40, max: 100 },
-        credits: 2, grade: 'B+', gp: 8, cg: 16, result: 'PASS'
+        end: { obt: 21, min: 12, max: 40 },
+        external: { obt: 39, min: 21, max: 70 },
+        internal: { obt: 27, min: 0, max: 30 },
+        total: { obt: 66, min: 40, max: 100 },
+        credits: 2, grade: 'B', gp: 7, cg: 14, result: 'PASS'
       },
       {
         name: 'INDIAN CONSTITUTION',
         code: '25AS104',
         type: 'THEORY',
-        mid1: { obt: 11, min: 0, max: 15 },
-        mid2: { obt: 10, min: 0, max: 15 },
-        end: { obt: 27, min: 12, max: 40 },
-        external: { obt: 48, min: 21, max: 70 },
-        internal: { obt: 28, min: 0, max: 30 },
-        total: { obt: 76, min: 40, max: 100 },
-        credits: 2, grade: 'B+', gp: 8, cg: 16, result: 'PASS'
+        mid1: { obt: 9, min: 0, max: 15 },
+        mid2: { obt: 8, min: 0, max: 15 },
+        end: { obt: 21, min: 12, max: 40 },
+        external: { obt: 38, min: 21, max: 70 },
+        internal: { obt: 26, min: 0, max: 30 },
+        total: { obt: 64, min: 40, max: 100 },
+        credits: 2, grade: 'B', gp: 7, cg: 14, result: 'PASS'
       },
       {
         name: 'WEB DESIGNING WORKSHOP I',
@@ -350,8 +351,71 @@ function closeAllMenus() {
 
 // Close on Escape
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeAllMenus();
+  if (e.key === 'Escape') {
+    closeAllMenus();
+    closeProfileDrawer();
+  }
 });
+
+// ===== PROFILE SIDEPANEL DRAWER =====
+function openProfileDrawer(event) {
+  if (event) event.stopPropagation();
+  closeAllMenus();
+  const drawer = document.getElementById('profileDrawer');
+  const backdrop = document.getElementById('profileDrawerBackdrop');
+  if (drawer) drawer.classList.add('open');
+  if (backdrop) backdrop.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProfileDrawer() {
+  const drawer = document.getElementById('profileDrawer');
+  const backdrop = document.getElementById('profileDrawerBackdrop');
+  if (drawer) drawer.classList.remove('open');
+  if (backdrop) backdrop.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function toggleProfileDrawer(event) {
+  if (event) event.stopPropagation();
+  const drawer = document.getElementById('profileDrawer');
+  if (drawer && drawer.classList.contains('open')) {
+    closeProfileDrawer();
+  } else {
+    openProfileDrawer(event);
+  }
+}
+
+function showToast(message) {
+  let toast = document.getElementById('toastNotice');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'toastNotice';
+    toast.className = 'toast-notice';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `<span class="material-symbols-outlined" style="font-size: 18px;">info</span> ${message}`;
+  toast.classList.add('show');
+  clearTimeout(toast._timeout);
+  toast._timeout = setTimeout(() => {
+    toast.classList.remove('show');
+  }, 2600);
+}
+
+function handleThemeCustomizer() {
+  showToast('Theme Customizer clicked');
+}
+
+function handleChangePassword() {
+  showToast('Change Password clicked');
+}
+
+function handleLogout() {
+  showToast('Logging out...');
+  setTimeout(() => {
+    closeProfileDrawer();
+  }, 1000);
+}
 
 // ===== NAVIGATION =====
 function goToResult(sem, term) {
@@ -404,7 +468,13 @@ function renderResultPage() {
 
   if (semEl) semEl.textContent = data.semester;
   if (pubEl) pubEl.textContent = data.publishedOn;
-  if (sgpaEl) sgpaEl.innerHTML = `${data.sgpa} <span class="small">SGPA</span>`;
+  if (sgpaEl) {
+    if (data.cgpa) {
+      sgpaEl.innerHTML = `${data.sgpa} <span class="small">SGPA</span> <span style="font-size:14px; font-weight:600; color:var(--text-secondary); margin-left:6px;">(${data.cgpa} CGPA)</span>`;
+    } else {
+      sgpaEl.innerHTML = `${data.sgpa} <span class="small">SGPA</span>`;
+    }
+  }
   if (marksEl) marksEl.textContent = data.totalMarks;
   if (marksTotalEl) marksTotalEl.textContent = data.maxMarks;
   if (creditsEl) creditsEl.textContent = data.creditsEarned;

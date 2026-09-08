@@ -30,6 +30,7 @@
       <div class="search-box">
         <span class="material-symbols-outlined">search</span>
         <input type="text" placeholder="Search Module">
+        <span class="material-symbols-outlined mic-icon" title="Voice Search">mic</span>
       </div>
       <button class="nav-icon-btn" title="Settings">
         <span class="material-symbols-outlined">tune</span>
@@ -37,7 +38,9 @@
       <button class="nav-icon-btn" title="Notifications">
         <span class="material-symbols-outlined">filter_list</span>
       </button>
-      <div class="avatar" title="Profile">PT</div>
+      <div class="avatar" id="userAvatarBtn" title="Prakhar Tiwari - User Profile" onclick="toggleProfileDrawer(event)">
+        <img src="profile.png" alt="Prakhar Tiwari" class="avatar-img">
+      </div>
     </div>
   </nav>
 
@@ -95,7 +98,7 @@
         <span class="tag tag-completed">Completed</span>
         <span class="tag-label">Term:</span>
         <span class="tag tag-term">Term 2</span>
-        <span class="tag-date">Result Date: 22/07/2026</span>
+        <span class="tag-date">Result Date: 09/09/2026</span>
       </div>
       <div class="info-row">
         <div class="info-item">
@@ -118,17 +121,17 @@
         </div>
         <div class="info-item">
           <span class="label">Marks</span>
-          <span class="value">881 / 1200</span>
+          <span class="value">839 / 1200</span>
         </div>
       </div>
       <div class="info-row">
         <div class="info-item">
           <span class="label">Marksheet Publish Date</span>
-          <span class="value primary">22/07/2026</span>
+          <span class="value primary">09/09/2026</span>
         </div>
         <div class="info-item">
           <span class="label">SGPA</span>
-          <span class="value">8.10</span>
+          <span class="value">6.70</span>
         </div>
       </div>
       <div class="success-banner">
@@ -157,7 +160,7 @@
           </div>
           <button class="sub-item" onclick="goToResult('sem2', 'term2')">
             <div class="sub-title">2025 | Term 2 | Regular</div>
-            <div class="sub-meta">12 Subjects | 22/07/2026</div>
+            <div class="sub-meta">12 Subjects | 09/09/2026</div>
           </button>
           <button class="sub-item" onclick="goToResult('sem2', 'mid1')">
             <div class="sub-title">2025 | Mid Term 1 (4) | Regular (1)</div>
@@ -187,7 +190,7 @@
         <span class="tag tag-completed">Completed</span>
         <span class="tag-label">Term:</span>
         <span class="tag tag-term">Term 1</span>
-        <span class="tag-date">Result Date: 09/04/2026</span>
+        <span class="tag-date">Result Date: 09/09/2026</span>
       </div>
       <div class="info-row">
         <div class="info-item">
@@ -210,17 +213,17 @@
         </div>
         <div class="info-item">
           <span class="label">Marks</span>
-          <span class="value">942 / 1200</span>
+          <span class="value">859 / 1200</span>
         </div>
       </div>
       <div class="info-row">
         <div class="info-item">
           <span class="label">Marksheet Publish Date</span>
-          <span class="value primary">09/04/2026</span>
+          <span class="value primary">09/09/2026</span>
         </div>
         <div class="info-item">
           <span class="label">SGPA</span>
-          <span class="value">7.70</span>
+          <span class="value">7.10</span>
         </div>
       </div>
       <div class="success-banner">
@@ -249,7 +252,7 @@
           </div>
           <button class="sub-item" onclick="goToResult('sem1', 'term1')">
             <div class="sub-title">2025 | Term 1 | Regular</div>
-            <div class="sub-meta">12 Subjects | 09/04/2026</div>
+            <div class="sub-meta">12 Subjects | 09/09/2026</div>
           </button>
           <button class="sub-item" onclick="goToResult('sem1', 'mid1')">
             <div class="sub-title">2025 | Mid Term 1 (4) | Regular (1)</div>
@@ -281,12 +284,12 @@
     <!-- Annual Summary Bar -->
     <div class="annual-summary-bar">
       <div class="annual-summary-item">
-        <div class="label">YGPA</div>
-        <div class="value">7.90</div>
+        <div class="label">YGPA / CGPA</div>
+        <div class="value">6.90</div>
       </div>
       <div class="annual-summary-item">
         <div class="label">Yearly Remark</div>
-        <div class="value">PWG</div>
+        <div class="value">PASS</div>
       </div>
       <div class="annual-summary-item">
         <div class="label">Seat No.</div>
@@ -329,7 +332,7 @@
           <span class="tag tag-completed">Completed</span>
           <span class="tag-label">Term:</span>
           <span class="tag tag-term">Term 1</span>
-          <span class="tag-date">Result Date: 09/04/2026</span>
+          <span class="tag-date">Result Date: 09/09/2026</span>
         </div>
         <div class="info-row">
           <div class="info-item"><span class="label">Seat Number</span><span class="value">2503201000837</span></div>
@@ -338,9 +341,9 @@
           <div class="info-item"><span class="label">Credits (Earned/Total)</span><span class="value">23 / 23</span></div>
         </div>
         <div class="info-row">
-          <div class="info-item"><span class="label">Marks</span><span class="value">942 / 1200</span></div>
-          <div class="info-item"><span class="label">Marksheet Publish Date</span><span class="value primary">09/04/2026</span></div>
-          <div class="info-item"><span class="label">SGPA</span><span class="value">7.70</span></div>
+          <div class="info-item"><span class="label">Marks</span><span class="value">859 / 1200</span></div>
+          <div class="info-item"><span class="label">Marksheet Publish Date</span><span class="value primary">09/09/2026</span></div>
+          <div class="info-item"><span class="label">SGPA</span><span class="value">7.10</span></div>
         </div>
         <div class="success-banner">
           <span class="material-symbols-outlined">check_circle</span>
@@ -361,7 +364,7 @@
           <span class="tag tag-completed">Completed</span>
           <span class="tag-label">Term:</span>
           <span class="tag tag-term">Term 2</span>
-          <span class="tag-date">Result Date: 22/07/2026</span>
+          <span class="tag-date">Result Date: 09/09/2026</span>
         </div>
         <div class="info-row">
           <div class="info-item"><span class="label">Seat Number</span><span class="value">2503201000837</span></div>
@@ -370,13 +373,13 @@
           <div class="info-item"><span class="label">Credits (Earned/Total)</span><span class="value">23 / 23</span></div>
         </div>
         <div class="info-row">
-          <div class="info-item"><span class="label">Marks</span><span class="value">881 / 1200</span></div>
-          <div class="info-item"><span class="label">Marksheet Publish Date</span><span class="value primary">22/07/2026</span></div>
-          <div class="info-item"><span class="label">SGPA</span><span class="value">8.10</span></div>
+          <div class="info-item"><span class="label">Marks</span><span class="value">839 / 1200</span></div>
+          <div class="info-item"><span class="label">Marksheet Publish Date</span><span class="value primary">09/09/2026</span></div>
+          <div class="info-item"><span class="label">SGPA</span><span class="value">6.70</span></div>
         </div>
         <div class="success-banner">
           <span class="material-symbols-outlined">check_circle</span>
-          PWG • All subjects passed
+          PASS • All subjects passed
         </div>
       </div>
     </div>
@@ -384,6 +387,78 @@
 
   <!-- Overlay to close menus -->
   <div class="overlay" id="overlay" onclick="closeAllMenus()"></div>
+
+  <!-- Profile Sidepanel Drawer Backdrop -->
+  <div class="profile-drawer-backdrop" id="profileDrawerBackdrop" onclick="closeProfileDrawer()"></div>
+
+  <!-- Profile Sidepanel Drawer -->
+  <aside class="profile-drawer" id="profileDrawer" aria-label="User Profile">
+    <!-- Header -->
+    <div class="drawer-header">
+      <button class="drawer-close-btn" id="drawerCloseBtn" title="Close Profile" onclick="closeProfileDrawer()">
+        <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+      </button>
+      <h2 class="drawer-title">User Profile</h2>
+    </div>
+
+    <!-- Body -->
+    <div class="drawer-body">
+      <!-- Avatar & Name -->
+      <div class="drawer-avatar-wrap">
+        <div class="drawer-avatar-circle">
+          <img src="profile.png" alt="PRAKHAR TIWARI" class="drawer-avatar-img">
+        </div>
+        <h3 class="drawer-user-name">PRAKHAR TIWARI</h3>
+        <p class="drawer-sims-id">Sims Id: 843</p>
+      </div>
+
+      <!-- Info Details -->
+      <div class="drawer-info-list">
+        <div class="drawer-info-row">
+          <span class="drawer-info-label">System Profile:</span>
+          <span class="drawer-info-val">student</span>
+        </div>
+        <div class="drawer-info-row">
+          <span class="drawer-info-label">Business Profile:</span>
+          <span class="drawer-info-val">Student</span>
+        </div>
+        <div class="drawer-info-row">
+          <span class="drawer-info-label">Institute:</span>
+          <span class="drawer-info-val">ABES</span>
+        </div>
+        <div class="drawer-info-row">
+          <span class="drawer-info-label">Class Name:</span>
+          <span class="drawer-info-val">FY-B.Tech CSE23</span>
+        </div>
+        <div class="drawer-info-row">
+          <span class="drawer-info-label">Year:</span>
+          <span class="drawer-info-val">2025</span>
+        </div>
+        <div class="drawer-info-row">
+          <span class="drawer-info-label">Term:</span>
+          <span class="drawer-info-val">Term 1</span>
+        </div>
+      </div>
+
+      <!-- Action Cards -->
+      <div class="drawer-actions">
+        <button class="drawer-action-card" type="button" onclick="handleThemeCustomizer()">
+          <span class="drawer-action-text">Theme Customizer</span>
+          <span class="material-symbols-outlined drawer-action-icon theme-icon">palette</span>
+        </button>
+        <button class="drawer-action-card" type="button" onclick="handleChangePassword()">
+          <span class="drawer-action-text">Change Password</span>
+          <span class="material-symbols-outlined drawer-action-icon password-icon">lock</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="drawer-footer">
+      <div class="drawer-version">v 19.0.343</div>
+      <button class="drawer-logout-btn" type="button" onclick="handleLogout()">Logout</button>
+    </div>
+  </aside>
 
   <script src="app.js"></script>
 </body>
